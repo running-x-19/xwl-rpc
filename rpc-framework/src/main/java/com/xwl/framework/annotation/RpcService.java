@@ -6,24 +6,26 @@ import java.lang.annotation.*;
 
 /**
  * @Author: xwl
- * @Date: 2023-02-22 11:17:52
- * @Desc: 使用注解进行服务消费
+ * @Date: 2023-03-18 18:49:19
+ * @Desc:
  */
 
-@Target({ElementType.TYPE, ElementType.FIELD})
+@Target({ElementType.TYPE, ElementType.FIELD, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Indexed
-public @interface RpcReference {
+public @interface RpcService {
 
     /**
-     * service version
+     * 版本号
+     *
      * @return
      */
     String version() default "";
 
     /**
-     * service group
+     * 组别
+     *
      * @return
      */
     String group() default "";

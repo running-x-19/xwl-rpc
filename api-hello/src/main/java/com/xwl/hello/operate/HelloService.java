@@ -12,6 +12,7 @@ public interface HelloService {
      * hello
      *
      * @return
+     * @param hello
      */
-    public String hello();
+    public String hello(Hello hello);
 }

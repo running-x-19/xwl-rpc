@@ -1,7 +1,6 @@
 package com.xwl.hello.operate;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -11,8 +10,14 @@ import java.io.Serializable;
  * @Desc:
  */
 
-@Data
+//@Data
+//@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @Builder
+@ToString
 public class Hello implements Serializable {
     private static final long serialVersionUID = -1054321450165531827L;
 
